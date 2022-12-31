@@ -18,9 +18,18 @@ h1{
   color: #d79921;
 }
 
+p1{
+  text-align: center;
+}
+
 img{
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
+
+ul{
+  text-align: center;
+}
+
