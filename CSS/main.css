@@ -108,6 +108,12 @@ ul li:hover a{
 }
 
 @media (max-width: 800px){
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .toggle-button{
     display: flex; 
   }
@@ -117,25 +123,25 @@ ul li:hover a{
     width: 100%;
   }
 
-  .navbar{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .navbar-links ul{
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
   }
 
   .navbar-links ul li{
     text-align: center;
+    background-color: #303030;
   }
 
   .navbar-links ul li a{
     padding: .7rem, 1rem;
+    background-color: #303030;
   }
 
   .navbar-links.active{
     display: flex;
+    opacity: 1;
+    background-color: #303030;
   }
+
 }
