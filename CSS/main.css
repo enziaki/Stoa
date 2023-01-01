@@ -63,6 +63,11 @@ ul li:hover a{
   color: #d79921;
 }
 
+.title a{
+  color: #d79921;
+  text-decoration: none;
+}
+
 .navbar-links ul{
   margin: 0;
   padding: 0;
@@ -84,3 +89,53 @@ ul li:hover a{
   height: 0.9rem;
 }
 
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width:30px;
+  height:21px;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: #d5c4a1;
+  border-radius: 10px; 
+}
+
+@media (max-width: 800px){
+  .toggle-button{
+    display: flex; 
+  }
+
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links ul li{
+    text-align: center;
+  }
+
+  .navbar-links ul li a{
+    padding: .7rem, 1rem;
+  }
+
+  .navbar-links.active{
+    display: flex;
+  }
+}
