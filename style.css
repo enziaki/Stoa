@@ -34,8 +34,8 @@ ul{
 }
 
 ul li:hover a{
-  background-color: #383838;
+  background-color: #303030;
   color: #d79921;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
