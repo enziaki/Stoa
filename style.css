@@ -33,3 +33,9 @@ ul{
   text-align: center;
 }
 
+ul li:hover a{
+  background-color: #383838;
+  color: #d79921;
+  border-radius: 5px;
+}
+
