@@ -1,6 +1,6 @@
 body{
-  margin: 0;
-  padding: 0;
+  margin: 20;
+  padding: 10;
   text-align: center;
   font-size: 20px;
   background-color: #282828;
@@ -21,19 +21,13 @@ h1{
   color: #d79921;
 }
 
-p1{
+body p1 {
   text-align: center;
 }
 
-img{
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-}
-
-ul{
-  text-align: center;
+body ul{
+  text-align: left;
+  list-style: none;
 }
 
 ul li a{
@@ -42,11 +36,42 @@ ul li a{
 }
 
 ul li:hover a{
-  background-color: #303030;
   color: #d79921;
   border-radius: 7px;
 }
 
+body h{
+  text-align: left;
+  padding-left: 25px;
+  color: #d79921;
+}
+
+h a{
+  color: #d79921;
+  text-decoration: none;
+}
+
+body p2{
+  text-align: center;
+  font-size: 18;
+}
+
+p1 img{
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+p2 dl dt a{
+  align-items: center;
+  color: #d79921;
+  text-decoration: none;
+  font-size: 18;
+}
+
+/* NAVBAR */
+  
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -81,12 +106,12 @@ ul li:hover a{
 .navbar-links li a{
   text-decoration: none;
   color: #d5c4a1;
-  display: block;
+  display: flex;
   padding: 1rem;  
 }
 
 .navbar-links li:hover a{
-  height: 0.9rem;
+   height: 0.9rem;
 }
 
 .toggle-button{
