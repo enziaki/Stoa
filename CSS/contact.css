@@ -1,0 +1,138 @@
+body{
+  margin: 20;
+  padding: 10;
+  text-align: center;
+  font-size: 20px;
+  background-color: #282828;
+  color: #d5c4a1;
+  font-family: 'Mukta', sans-serif;
+  font-family: 'Redressed', cursive;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+  font-family: 'Redressed', cursive;
+  font-family: 'Ubuntu', sans-serif;
+  color: #d79921;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #d5c4a1;
+}
+
+ul li:hover a{
+  color: #d79921;
+  border-radius: 7px;
+}
+
+footer{
+  text-align: left;
+  font-size: 0.7rem;
+  color: #d79921;
+}
+
+/* NAVBAR */ 
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #303030;
+  color: #d5c4a1;
+  height: 2.4rem;
+  border-radius: 10px;
+}
+
+.title{
+  font-size: 1.5rem;
+  margin: .5rem;
+  color: #d79921;
+}
+
+.title a{
+  color: #d79921;
+  text-decoration: none;
+}
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li{
+  list-style: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: #d5c4a1;
+  display: block;
+  padding: 1rem;  
+}
+
+.navbar-links li:hover a{
+  height: 0.9rem;
+}
+
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width:30px;
+  height:21px;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: #d5c4a1;
+  border-radius: 10px; 
+}
+
+@media (max-width: 800px){
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button{
+    display: flex; 
+  }
+
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li{
+    text-align: center;
+    background-color: #303030;
+  }
+
+  .navbar-links ul li a{
+    padding: .7rem, 1rem;
+    background-color: #303030;
+  }
+
+  .navbar-links.active{
+    display: flex;
+    opacity: 1;
+    background-color: #303030;
+  }
+}
