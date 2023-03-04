@@ -77,6 +77,11 @@ p2 dl dt{
   font-weight: bolder;
 }
 
+p2 dl dd{
+  font-size: 1rem;
+  list-style: circle;
+}
+
 footer{
   text-align: left;
   font-size: 0.7rem;
