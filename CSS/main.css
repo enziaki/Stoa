@@ -79,7 +79,11 @@ p2 dl dt{
 
 p2 dl dd{
   font-size: 1rem;
-  list-style: circle;
+}
+
+p2 dl dd ul{
+  text-align: center;
+  padding-right: 50px;
 }
 
 footer{
