@@ -1,10 +1,10 @@
 import './App.css';
-import MarkdownReader from './components/MarkdownReader';
+import PostComponent from './components/PostComponent';
 
 function App() {
   return (
     <div className='ArticleClass'>
-      < MarkdownReader />
+      <PostComponent />
     </div>
   );
 }
