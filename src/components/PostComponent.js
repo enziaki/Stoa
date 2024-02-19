@@ -5,7 +5,7 @@ Maybe I will add indexing in this component as well
 */
 import React, { useEffect, useState } from 'react'
 import ReactMarkdown from 'react-markdown';
-
+import './css/PostComponent.css'
 
 
 function PostComponent() {
@@ -29,10 +29,11 @@ function PostComponent() {
     return (
         <div className='PostComponent'>
             {posts && posts.map && posts.map((post, idx) => (
-                <div className="post" key={idx}> {/* Use a unique key prop */}
+                <div className="post" key={idx}>
                     <ReactMarkdown>
                         {post}
                     </ReactMarkdown>
+                    <br />
                 </div>
             ))}
         </div>

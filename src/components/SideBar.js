@@ -1,16 +1,16 @@
-/* FEATURES
-
-1. Introduce yourself there
-2. An article index of all of the articles
-3. any other hyper links
-
-*/
 import React from 'react'
+import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import './css/Sidebar.css'
 
 function SideBar() {
     return (
-        <div>
-
+        <div className="Sidebar">
+            <Sidebar>
+                <Menu>
+                    <MenuItem>Article 1</MenuItem>
+                    <MenuItem>Article 2</MenuItem>
+                </Menu>
+            </Sidebar>
         </div>
     )
 }

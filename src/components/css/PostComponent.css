@@ -1,0 +1,10 @@
+.PostComponent {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.post {
+    display: block;
+    justify-content: center;
+}
